@@ -53,9 +53,20 @@ $conn->close();
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="ficha.css">
     <title>Ficha Médica</title>
+    <style>
+        body {
+            background-image: url('fondo.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* Añade más estilos según sea necesario */
+        }
+    </style>
 </head>
 <body>
     <h1>Ficha Médica</h1>
+    <button onclick="location.href='inicio_ficha.php'">Volver al inicio </button>
+
     <form method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" required><br>
@@ -96,6 +107,7 @@ $conn->close();
         <textarea name="plan_tratamiento" rows="4" cols="50"></textarea><br>
 
         <input type="submit" value="Registrar">
+        
     </form>
 </body>
 </html>

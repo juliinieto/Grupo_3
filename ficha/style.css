@@ -95,14 +95,16 @@ body {
 font-family: 'Arial', sans-serif;
 background-color:beige;/* Fondo claro */
 margin: 0;
-padding: 0;
+padding: 20px;
 text-align: center;
 }
 
 h1 {
-background-color:  #134413; /* Color de fondo rosa */
-color: beige;  /* Texto en negro */
-padding: 1em 0;
+    background-color: #134413;
+    color: #f5f5dc;
+    padding: 10px;
+    text-align: center;
+  
 }
 
 ul {
@@ -115,15 +117,14 @@ padding: 0;
 }
 
 li {
-width: 150px;
-height: 150px;
-background-color: rgba(238, 100, 100, 0.144); 
-margin: 10px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-
+    width: 150px;
+    height: 150px;
+    background-color: #f5f5dc7e; 
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 li a {

@@ -42,6 +42,15 @@ $conn->close();
     <meta charset="UTF-8">
     <title>Ficha Médica Completa</title>
     <link rel="stylesheet" type="text/css" href="ficha.css">
+    <style>
+        body {
+            background-image: url('fondo.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* Añade más estilos según sea necesario */
+        }
+    </style>
 </head>
 <body>
     <h1>Ficha Médica Completa</h1>
