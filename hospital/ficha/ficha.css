@@ -1,0 +1,56 @@
+/* Estilos para el formulario */
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #134413;
+    color: #f5f5dc;
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    background-color: #f5f5dc7e;
+    border: 1px solid #134413;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #134413;
+    color: beige;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0b620b;
+}

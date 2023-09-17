@@ -1,0 +1,136 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: beige;/* Fondo beige*/
+    color:beige; /* Texto en negro */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hace que ocupe toda la altura de la pantalla */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    padding: 60px;
+    border-radius: 0px;
+    background-color: #f5f5dc7e; /* Fondo blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000; /* Texto en negro */
+    text-align: center;
+}
+
+
+/* Encabezado secundario */
+h2 {
+    color: rgba(255, 205, 205); /* Texto en negro */
+    margin-bottom: 20px;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-bottom: 12px;
+    color: rgba(255, 205, 205, 0.692); /* Texto en negro */
+    text-align: left;
+}
+
+/* Entradas de texto y botones */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000; /* Borde negro */
+    border-radius: 2px;
+    background-color: #fff; /* Fondo blanco */
+    color: beige; /* Texto en negro */
+    box-sizing: border-box;
+}
+
+/* Botón de envío */
+button[type="submit"] {
+    background-color: #b48e5b; /* Fondo negro */
+    border: none;
+    color: beige; /* Texto en beige */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #333; /* Cambia el color de fondo del botón al pasar el ratón */
+}
+
+/* Botones de navegación */
+.buttons .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: px solid #000; /* Borde negro */
+    border-radius: 5px;
+    background-color:#b48e5b; /* Fondo marron*/
+    color: beige; /* Texto en beige */
+    text-decoration: none;
+}
+
+/* Mensaje de error */
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Botonera desplegable */
+.button-dropdown {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #000; /* Borde negro */
+    border-radius: 5px;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto en blanco */
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Fondo blanco */
+    min-width: 160px;
+    border: 1px solid #000; /* Borde negro */
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000; /* Texto en negro */
+}
+
+.dropdown-content a:hover {
+    background-color: #eee; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.button-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/* footer */
+
+footer {
+    background-color:rgb(19, 68, 19);
+    color: rgb(255, 255, 255);
+    text-align: center; 
+    padding:10px;
+}
