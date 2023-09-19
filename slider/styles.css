@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    animation: slide 15s linear infinite; /* Controla la velocidad de desplazamiento */
+}
+
+.slider img {
+    width: 500px; /* Mantiene el ancho de cada imagen al 100% */
+    height: auto; /* Para mantener la proporción de aspecto */
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+   33.33% {
+        transform: translateX(-10%); /* Muestra la siguiente imagen */
+    }
+   66.66% {
+        transform: translateX(-30%); /* Muestra la tercera imagen */
+    }
+    100% {
+        transform: translateX(0%); /* Vuelve a la primera imagen */
+    }
+}
