@@ -1,0 +1,75 @@
+/* styles.css */
+
+body {
+    background-image: url('fondo.jpeg');
+    font-family: Arial, sans-serif;
+    
+    
+}
+
+h1 {
+    text-align: center;
+    background-color: #f5f5dc;
+    color: #000;
+    padding: 20px 0;
+    
+}
+
+.doctor {
+    width: 300px; /* Ancho fijo para las cajas de los doctores */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    float: left; /* Hace que las cajas se alineen una al lado de la otra */
+    background-color: #f5f5dc;
+}
+
+.doctor img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    background-color: #f5f5dc;
+}
+
+h2 {
+    margin-top: 10px;
+}
+.doctor1 img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+    background-color: #f5f5dc;
+}
+.doctor1 {
+    width: 300px; /* Ancho fijo para las cajas de los doctores */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    float: left; /* Hace que las cajas se alineen una al lado de la otra */
+    background-color: #f5f5dc;
+}
+
+.doctor2 img {
+    max-width: 67%;
+    height: auto;
+    border-radius: 50%;
+    background-color: #f5f5dc;
+}
+.doctor2 {
+    width: 300px; /* Ancho fijo para las cajas de los doctores */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    float: left; /* Hace que las cajas se alineen una al lado de la otra */
+    background-color: #f5f5dc;
+}
+
