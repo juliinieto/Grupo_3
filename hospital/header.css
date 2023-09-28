@@ -1,0 +1,167 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #f5f5db;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px; /* Tamaño del logo */
+    margin-right: 20px; /* Espacio entre el logo y el texto "Hospital" */
+    border-radius: 40px;
+}
+
+.logo h1 {
+    color: #000;
+    font-size: 24px;
+    margin: 0;
+}
+
+.login-register a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px; /* Espacio entre los enlaces "Iniciar Sesión" y "Registrarse" */
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #f5f5dc;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la barra de navegación desplegable */
+.menu {
+    display: none;
+}
+
+/* Estilos para el botón de alternar menú */
+.menu-toggle {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* Estilos para el menú cuando está desplegado */
+.menu.active {
+    display: block;
+}
+
+/* Estilos para el contenedor del carrusel */
+
+/* Estilos adicionales para las áreas de servicios */
+.service {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f5f5dc7e;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-info {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos en la información del servicio */
+    justify-content: space-between;
+}
+
+.service h3 {
+    margin: 0;
+    font-weight: bold;
+    color: #134413;
+}
+
+.service-image {
+    max-width: 100px; /* Ancho máximo para la imagen */
+    height: auto;
+    margin-left: 20px; /* Espacio entre la imagen y el nombre del área */
+}
+
+.service p {
+    margin: 10px 0;
+    color: #134413;
+}
+
+/* Estilos para los enlaces en cada servicio */
+.service a {
+    color: #134413;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service a:hover {
+    color: #ffd86b96;
+}
+
+footer {
+    background-color: #f5f5dc;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+footer h3 {
+    margin: 0;
+    color: #000;
+}
+
+footer p {
+    margin: 0;
+    color: #000;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 50px; /* Tamaño del logo ajustado para dispositivos móviles */
+        margin-right: 10px; /* Espacio entre el logo y el texto "Hospital" */
+    }
+
+    .logo h1 {
+        font-size: 18px; /* Tamaño de fuente ajustado para dispositivos móviles */
+    }
+
+    nav ul li {
+        margin-right: 10px; /* Espacio entre elementos del menú */
+    }
+}

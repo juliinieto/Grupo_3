@@ -1,0 +1,170 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #f5f5dc;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    margin-right: 20px;
+    border-radius: 40px;
+}
+
+.logo h1 {
+    color: #000;
+    font-size: 24px;
+    margin: 0;
+}
+
+.login-register a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el botón de alternar menú */
+.menu-toggle {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* Estilos para el menú cuando está desplegado */
+.menu.active {
+    display: block;
+}
+
+/* Estilos para el contenido principal */
+body {
+    background-image: url('fondo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #f5f5dc;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Estilos para la ficha médica */
+h2 {
+    text-align: center;
+    color: #000;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+p {
+    color: #000;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #f5f5dc;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+footer h3 {
+    margin: 0;
+    color: #000;
+}
+
+footer p {
+    margin: 0;
+    color: #000;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 50px; /* Tamaño del logo ajustado para dispositivos móviles */
+        margin-right: 10px; /* Espacio entre el logo y el texto "Hospital" */
+    }
+
+    .logo h1 {
+        font-size: 18px; /* Tamaño de fuente ajustado para dispositivos móviles */
+    }
+
+    h1 {
+        font-size: 24px; /* Tamaño de fuente ajustado para dispositivos móviles */
+    }
+
+    h2 {
+        font-size: 24px; /* Tamaño de fuente ajustado para dispositivos móviles */
+    }
+
+    p {
+        font-size: 16px; /* Tamaño de fuente ajustado para dispositivos móviles */
+    }
+
+    input[type="text"] {
+        font-size: 14px; /* Tamaño de fuente ajustado para dispositivos móviles */
+    }
+
+    input[type="submit"] {
+        font-size: 14px; /* Tamaño de fuente ajustado para dispositivos móviles */
+    }
+}
