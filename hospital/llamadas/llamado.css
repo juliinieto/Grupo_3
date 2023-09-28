@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    background-image: url(fondo.jpeg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    background-color: #f5f5dc7e; /* Color naranja claro */
+    color: #000;
+    padding: 20px;
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+p {
+    background-color: #f5f5dc7e; /* Color naranja claro */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="number"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #000000; /* Color negro */
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    p {
+        max-width: 100%; /* Ajustar el ancho máximo para dispositivos móviles */
+    }
+}
