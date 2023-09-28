@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px; /* Tamaño de fuente base */
+}
+
+.container {
+    max-width: 80%; /* Ancho relativo */
+    padding: 5%; /* Márgenes internos relativos */
+    border-radius: 8px;
+    background-color: #f5f5dc7e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    padding: 5%; /* Márgenes internos relativos */
+    border-radius: 8px;
+    background-color: #f5f5dc7e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000;
+    text-align: center;
+}
+
+/* Encabezado secundario */
+h2 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+}
+
+/* Entradas de texto y botones */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background-color: #fff;
+    color: black;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #b48e5b;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #f5f5dc7e;
+}
+
+/* Botones de navegación */
+.buttons .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #b48e5b;
+    color: beige;
+    text-decoration: none;
+}
+
+/* Mensaje de error */
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Botonera desplegable */
+.button-dropdown {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown-content a:hover {
+    background-color: #eee;
+}
+
+.button-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para pantallas pequeñas (máximo 768px de ancho) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduzca el tamaño de fuente en pantallas pequeñas */
+    }
+
+    .container {
+        max-width: 90%; /* Ancho relativo */
+    }
+
+    /* Agregue estilos adicionales específicos para pantallas pequeñas si es necesario */
+}
+
+/* footer */
+footer {
+    background-color: rgb(19, 68, 19);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}

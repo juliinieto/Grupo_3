@@ -1,0 +1,122 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px; /* Aumentamos el espacio de relleno horizontal para mayor espaciado en dispositivos pequeños */
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección de flex a columna para apilar elementos en pantallas pequeñas */
+    align-items: center; /* Centramos verticalmente los elementos en el encabezado */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Añadimos margen inferior para separar el logo del menú en dispositivos pequeños */
+}
+
+.logo img {
+    width: 70px;
+    margin-right: 20px;
+    border-radius: 40px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.login-register {
+    margin-top: 10px; /* Espacio entre el logo y los enlaces de inicio de sesión y registro */
+    display: flex;
+    flex-direction: column; /* Apilamos los enlaces en dispositivos pequeños */
+    align-items: center; /* Centramos horizontalmente los enlaces */
+}
+
+.login-register a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 0; /* Espacio entre los enlaces */
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centramos los elementos en la barra de navegación */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en dispositivos pequeños */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Eliminamos el margen derecho del último elemento para evitar desbordamientos */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el botón de alternar menú */
+.menu-toggle {
+    cursor: pointer;
+    display: none; /* Ocultamos el botón de alternar menú por defecto */
+}
+
+/* Estilos para el menú cuando está desplegado */
+.menu.active {
+    display: flex; /* Cambiamos a flex para mostrar el menú en una columna en dispositivos pequeños */
+    flex-direction: column;
+    position: absolute;
+    top: 50px; /* Espacio desde la parte superior del encabezado */
+    left: 0;
+    background-color: #444;
+    width: 100%;
+}
+
+/* Estilos para los elementos del menú en dispositivos pequeños */
+.menu.active li {
+    margin-right: 0;
+    margin-bottom: 10px; /* Espacio entre los elementos del menú */
+    text-align: center; /* Centramos el texto en dispositivos pequeños */
+}
+
+/* Mostrar el botón de alternar menú en dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px; /* Alineamos el botón en la parte superior derecha del encabezado */
+        right: 20px;
+    }
+
+    nav ul {
+        display: none; /* Ocultamos la barra de navegación en dispositivos pequeños */
+    }
+
+    nav ul li {
+        margin-right: 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}

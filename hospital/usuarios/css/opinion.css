@@ -1,0 +1,91 @@
+/*estilos para caja de ecomentarios*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.insertar {
+    background-color: #134413;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #000;
+    padding: 2%;
+}
+
+.nombre, .opinion {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-size: medium;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 2px  #000000;
+    border-radius: 8px;
+    position:center;
+}
+
+button[type="submit"] {
+    background-color: #b48e5b;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(255, 255, 152);
+}
+
+h2 {
+    font-size: 24px;
+    margin: 20px;
+    color: #000;
+}
+
+.consultas {
+    background-color: #134413;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: beige;
+}
+
+p {
+    font-size: small;
+    color: beige;
+}

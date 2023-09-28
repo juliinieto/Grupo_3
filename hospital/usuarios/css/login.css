@@ -1,0 +1,64 @@
+body {
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: #f5f5dc7e;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%; /* Cambiamos el ancho fijo a un ancho relativo */
+    max-width: 300px; /* Establecemos un ancho máximo para mantener el diseño en dispositivos grandes */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+input[type="text"],
+input[type="password"],
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background-color: #fff;
+    color: black;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #b48e5b;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #f5f5dc7e;
+}
+
+/* Media queries para dispositivos de pantalla más pequeña, como teléfonos */
+@media screen and (max-width: 768px) {
+    .login-container {
+        max-width: 100%; /* Para ocupar el ancho completo en pantallas más pequeñas */
+    }
+}
