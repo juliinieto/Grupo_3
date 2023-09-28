@@ -1,0 +1,57 @@
+/* styles.css */
+
+body {
+    background-image: url('fondo.jpeg');
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el cuerpo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    background-position: center center; /* Centra la imagen de fondo */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: #f5f5dc7e;
+    color: #000;
+    padding: 20px 0;
+}
+
+.doctor {
+    width: 100%; /* Ancho relativo para ocupar toda la pantalla */
+    max-width: 300px; /* Ancho máximo para mantener el diseño en pantallas grandes */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px auto; /* Margen automático horizontal para centrar */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #f5f5dc7e;
+}
+
+.doctor img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    background-color: #f5f5dc7e;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .doctor1,
+    .doctor2 {
+        width: 100%; /* Cambia el ancho de las cajas de los doctores para ocupar toda la pantalla */
+        max-width: none; /* Elimina el ancho máximo para que se ajusten al ancho completo de la pantalla */
+        float: none; /* Elimina la alineación a la izquierda para que se muestren uno debajo del otro */
+    }
+
+    .doctor1,
+    .doctor2 img {
+        max-width: 100%; /* Ajusta el ancho máximo de las imágenes para que se ajusten a la pantalla */
+        border-radius: 0; /* Elimina el radio del borde de las imágenes */
+    }
+}
